@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <script>
+            
+    document.addEventListener('DOMContentLoaded', function(){
+
+        let corrects = document.querySelectorAll('.correct');
+        for (let i = 0; i<corrects.length; i++)
+        {
+            corrects[i].addEventListener('click', function(){
+            corrects[i].style.backgroundColor = 'green';
+            });
+        };
+
+        let incorrects = document.querySelectorAll('.incorrect');
+        for (let i = 0; i<incorrects.length; i++)
+        {
+            incorrects[i].addEventListener('click', function(){
+            incorrects[i].style.backgroundColor = 'red';
+            });
+        };
+    });
+</script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+  <title>quiz</title>
+</head>
+
+<body>
+  <nav class="navig">
+    <a href="index.html"><img style="width: 35px" src="quiz.png"></a>
+    <a href="index.html">Home</a>
+    <a href="que1.html">Quiz</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Query</a>
+  </nav>
+  <section class="heading">
+    <h1>QUESTIONS</h1>
+  </section>
+  <section class="prev-block" style="display: flex;">
+    <div class="next"><a href="#first-ques">Set 1</a></div>
+    <div class="next"><a href="#second-ques">Set 2</a></div>
+  </section>
+
+  <section class="heading">
+    <h2>Set 1</h2>
+  </section>
+  <section class="question-block" id="first-ques">
+    <p class="question">Who is the president of usa ?</p>
+    <div class="options">
+      <button class="btn correct">joe biden</button>
+      <button class="btn incorrect">donald trump</button>
+      <button class="btn incorrect">kammala harrish</button>
+      <button class="btn incorrect">rishi sunak</button>
+    </div>
+  </section>
+  <section class="question-block eve">
+    <p class="question">Who is the prime minister of india ?</p>
+    <div class="options">
+      <button class="btn incorrect">rahul gandhi</button>
+      <button class="btn correct">narendra modi</button>
+      <button class="btn incorrect">arvind kejriwal</button>
+      <button class="btn incorrect">mamata banerjee</button>
+    </div>
+  </section>
+  <section class="question-block">
+    <p class="question">Who is the prime minister of uk ?</p>
+    <div class="options">
+      <button class="btn correct">rishi sunak</button>
+      <button class="btn incorrect">liz truss</button>
+      <button class="btn incorrect">donald trump</button>
+      <button class="btn incorrect">joe biden</button>
+    </div>
+  </section>
+
+  <section class="heading sets">
+    <h2>Set 2</h2>
+  </section>
+  <section class="question-block" id="second-ques">
+    <p class="question">What is the capital of india ?</p>
+    <div class="options">
+      <button class="btn correct">new delhi</button>
+      <button class="btn incorrect">beijing</button>
+      <button class="btn incorrect">new york</button>
+      <button class="btn incorrect">tokyo</button>
+    </div>
+  </section>
+  <section class="question-block eve">
+    <p class="question">What is the capital of china ?</p>
+    <div class="options">
+      <button class="btn incorrect">new delhi</button>
+      <button class="btn correct">beijing</button>
+      <button class="btn incorrect">tokyo</button>
+      <button class="btn incorrect">london</button>
+    </div>
+  </section>
+  <section class="question-block">
+    <p class="question">What is the capital of uk ?</p>
+    <div class="options">
+      <button class="btn incorrect">new delhi</button>
+      <button class="btn incorrect">beijing</button>
+      <button class="btn incorrect">tokyo</button>
+      <button class="btn correct">london</button>
+    </div>
+  </section>
+  
+</body>
+</html>
